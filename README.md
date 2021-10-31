@@ -13,16 +13,26 @@ Simple responsive front-end dashboard. This dashboard uses the Bootstrap styles 
 * [ Chartjs](https://www.chartjs.org/ " Chartjs")
 * [Tidio](https://www.tidio.com/ "Tidio")
 
+## Project Prototype
+- Home Page
+<img src="img/screen1.png">
+
+- Products Page
+<img src="img/screen2.jpg">
+
+
+
 ## Project Requirements
 - Design Responsive Dashboard by Bootstrap
 - Use Fontawesome library to add icons.
 - Use Chart JavaScript library to design the Reports'chart
 - Use map() Js for mapping products array list int card that displays on the Products page.
-- Use Tidio to add chatbot in dashboard website.
+- Use Tidio integrations to add chatbot in dashboard website.
 
 ### The Dashboard  Demo
 You can visit Dashboard website [link here](com/)
 
 ## Future Features:
+- Add Products Details Page.
 - Make dark mode dashboard.
 - link the chart with API information.
