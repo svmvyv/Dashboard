@@ -11,6 +11,7 @@ Simple responsive front-end dashboard. This dashboard uses the Bootstrap styles 
 * [Fontawesome](https://fontawesome.com/ "Fontawesome")
 * [Bootstrap](https://getbootstrap.com/ "Bootstrap")
 * [ Chartjs](https://www.chartjs.org/ " Chartjs")
+* [ Datatables](https://datatables.net/ " Chartjs")
 * [Tidio](https://www.tidio.com/ "Tidio")
 
 ## Project Prototype
