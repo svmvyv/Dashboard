@@ -1,10 +1,54 @@
 .bg-purple {
-  color: white!important;
-  background: linear-gradient(135deg, #37315e, rgb(64, 29, 186))!important;
+    color: white!important;
+    background: linear-gradient(135deg, #37315e, rgb(64, 29, 186))!important;
 }
 
 .bg-pink {
-  border-color: #da4167!important;
-  background: linear-gradient(227deg, rgba(220, 92, 124, 1) 0%, rgba(218, 65, 103, 1) 100%)!important;
-  color: white!important;
+    border-color: #da4167!important;
+    background: linear-gradient(227deg, rgba(220, 92, 124, 1) 0%, rgba(218, 65, 103, 1) 100%)!important;
+    color: white!important;
+}
+
+.bg-pinkdark {
+    border-color: #c23a5c!important;
+    background: linear-gradient(227deg, rgba(220, 92, 124, 1) 0%, rgba(218, 65, 103, 1) 100%)!important;
+    color: white!important;
+}
+
+.side-navbar {
+    width: 280px;
+    height: 100%;
+    position: fixed;
+    margin-left: -300px;
+    background-color: linear-gradient(135deg, #37315e, rgb(64, 29, 186))!important;
+    transition: 0.5s;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+    background-color: #ffffff26;
+}
+
+.my-container {
+    transition: 0.4s;
+}
+
+.active-nav {
+    margin-left: 0;
+}
+
+
+/* for main section */
+
+.active-cont {
+    margin-left: 180px;
+}
+
+#menu-btn {
+    color: #fff;
+}
+
+.pp-3 {
+    padding-left: 4.5% !important;
 }
