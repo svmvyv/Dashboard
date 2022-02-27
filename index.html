@@ -17,15 +17,19 @@
 
     <!-- Navbar Brand-->
 
-    <nav class="navbar static-top navbar-expand-lg navbar-dark bg-purple ml-auto">
-        <div class="container-fluid">
+
+    <nav class="navbar fixed-top navbar-expand navbar-dark bg-purple ml-auto d-flex flex-row">
+        <div class="container justify-content-start d-flex flex-row">
             <a class="btn border-0 fs-3" id="menu-btn">
                 <i class="fa fa-bars" style="color:white"></i>
             </a>
             <a class="navbar-brand " href="#">
 
-                <img src="..\img\favicon.ico" alt="" width="30"> Nrt Solutions</a>
-
+                <img src="..\img\favicon.ico" alt="" width="30">
+                <p class="d-none d-lg-inline">Nrt Solutions</p>
+            </a>
+        </div>
+        <div class="container justify-content-end d-flex flex-row">
             <form class="d-flex ">
                 <input class="form" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-search bg-pink rounded-0" type="submit"><i class="bi bi-search"></i></button>
@@ -36,6 +40,7 @@
     <i class="fa-solid fa-user"></i>
   </button>
 
+
                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item dropdown" href="#"> Edit settings </a>
                     <a class="dropdown-item" href="#"> Edit profile page </a>
@@ -44,10 +49,10 @@
                 </div>
                 </li>
                 </ul>
-
-
+            </div>
+        </div>
     </nav>
-    <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column bg-purple col-2" id="sidebar">
+    <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column bg-purple" id="sidebar">
         <ul class="nav flex-column text-white w-100">
             <li href="#" class="nav-link opacity-75">
                 <span class="text-white mx-2"><i class="fa-solid fa-house p-2"></i>Home</span>
@@ -56,33 +61,24 @@
                 <span class="text-white mx-2"><i class="fa-solid fa-shirt p-2"></i>Products</span>
             </li>
             <li href="#" class="nav-link opacity-75">
-                <span class="text-white mx-2"><i class="fa-solid fa-border-all p-2"></i>Orders</span><i class="fa-solid fa-chevron-right text-white ml-10 	d-none d-xl-inline-flex d-xxl-inline-flex "></i>
+                <span class="text-white mx-2"><i class="fa-solid fa-border-all p-2"></i>Orders</span><i class="fa-solid fa-chevron-right text-white ml-10 float-end d-none d-xl-inline-flex d-xxl-inline-flex "></i>
             </li>
             <li href="#" class="nav-link opacity-75">
-                <span class="text-white mx-2"><i class="fa-solid fa-chart-column p-2"></i>Reports</span><i class="fa-solid fa-chevron-right text-white ml-10 	d-none d-xl-block d-xxl-inline-flex "></i>
+                <span class="text-white mx-2"><i class="fa-solid fa-chart-column p-2"></i>Reports</span><i class="fa-solid fa-chevron-right text-white ml-10 float-end	d-none d-xl-block d-xxl-inline-flex "></i>
             </li>
             <li href="#" class="nav-link opacity-75">
                 <span class="text-white mx-2"><i class="fa-solid fa-users p-2"></i>Customers</span>
             </li>
         </ul>
-        <span class="nav-link h4  text-white bg-opacity-50 bg-dark fs-6 p-5">
+        <span class="nav-link h4 text-white bg-opacity-50 bg-dark fs-6 mbb-5">
         <p>Logged in as:</p> 
         <p>NRT Admin</p>
         </span>
     </div>
 
-    </div>
+
 
     <!-- Sidebar Toggle Icon-->
-
-    <!-- <nav class="d-flex navbar fixed-top navbar-dark bg-purple">
-        <div class="d-flex container">
-
-            <a class="navbar-brand" class="justify-content-start" href="#">Nrt Solutions</a>
-            <button class="navbar-toggler justify-content-start" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
-
 
     <!-- Navbar Search-->
 
@@ -100,66 +96,120 @@
         <h1 class="text-black p-3">Dashboard
         </h1>
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb ps-3">
+            <ol class="breadcrumb ps-4">
                 <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
             </ol>
         </nav>
 
-        <div class="row align-items-center p-3 text-center text-white">
-            <div class="col">
-                <div class="card rounded-3 mb-3" style="max-width: 18rem;">
-                    <div class="card-body rounded-top text-white bg-pink">
+        <div class="row justify-content-center p-3 text-white dash">
+            <div class="col-lg-3">
+                <div class="card rounded-3 mb-3" style="max-width: 45rem;">
+                    <div class="card-body rounded-top text-white bg-pink text-center fs-7">
                         <h5 class="card-title">Sales</h5>
                         <p class="card-text">5784574.00 SAR</p>
                     </div>
-                    <div class="card-footer rounded-bottom bg-pinkdark"><a href="#" class="justify-content-start">View Details</a><i class="fa-solid fa-chevron-right text-white d-none d-xl-inline-flex d-xxl-inline-flex "></i> </div>
+                    <div class="card-footer rounded-bottom bg-pinkdark align-items-center"><a href="#" class="text-start text-white fs-6">View Details
+                        <i class="fa-solid fa-chevron-right text-white float-end " style=" vertical-align: middle;"></i></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card rounded-3 mb-3" style="max-width: 18rem;">
-                    <div class="card-body rounded-top text-white bg-pink">
-                        <h5 class="card-title">Success card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="col-lg-3">
+                <div class="card rounded-3 mb-3" style="max-width:45rem;">
+                    <div class="card-body rounded-top text-white bg-pink text-center fs-7">
+                        <h5 class="card-title">Orders</h5>
+                        <p class="card-text">8764</p>
                     </div>
-                    <div class="card-footer rounded-bottom bg-pinkdark ">Footer</div>
+                    <div class="card-footer rounded-bottom bg-pinkdark align-items-center"><a href="#" class="text-start text-white fs-6">View Details
+                        <i class="fa-solid fa-chevron-right text-white float-end " style=" vertical-align: middle;"></i></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card rounded-3 mb-3" style="max-width: 18rem;">
-                    <div class="card-body rounded-top text-white bg-pink">
-                        <h5 class="card-title">Success card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="col-lg-3">
+                <div class="card rounded-3 mb-3" style="max-width: 45rem;">
+                    <div class="card-body rounded-top text-white bg-pink text-center fs-7">
+                        <h5 class="card-title">Visitors</h5>
+                        <p class="card-text">45,000</p>
                     </div>
-                    <div class="card-footer rounded-bottom bg-pinkdark ">Footer</div>
+                    <div class="card-footer rounded-bottom bg-pinkdark align-items-center"><a href="#" class="text-start text-white fs-6">View Details
+                        <i class="fa-solid fa-chevron-right text-white float-end " style=" vertical-align: middle;"></i></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card rounded-3 mb-3" style="max-width: 18rem;">
-                    <div class="card-body rounded-top text-white bg-pink">
-                        <h5 class="card-title">Success card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="col-lg-3">
+                <div class="card rounded-3 mb-3" style="max-width: 45rem;">
+                    <div class="card-body rounded-top text-white bg-pink text-center fs-7">
+                        <h5 class="card-title">Conversion Rate</h5>
+                        <p class="card-text">3.75%</p>
                     </div>
-                    <div class="card-footer rounded-bottom bg-pinkdark ">Footer</div>
+                    <div class="card-footer rounded-bottom bg-pinkdark align-items-center"><a href="#" class="text-start text-white fs-6">View Details
+                        <i class="fa-solid fa-chevron-right text-white float-end " style=" vertical-align: middle;"></i></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="container">
+            <h1>HEY WORLD</h1>
+            <canvas id="myChart"></canvas>
+        </div>
 
 
-    <!-- Reports Cards -->
-    <!-- Reports Chart -->
-    <!-- Customers Table -->
 
 
-    <!-- Customers Table -->
-    <footer>
-    </footer>
-    </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
-    <script src="js/scripts.js "></script>
-    <script src="js/charts.js "></script>
-    <script src="https://kit.fontawesome.com/1341c370f4.js" crossorigin="anonymous"></script>
+
+
+
+
+        <!-- Reports Cards -->
+        <!-- Reports Chart -->
+        <!-- Customers Table -->
+
+
+        <!-- Customers Table -->
+        <div class="navbar navbar-fixed-bottom">
+            <div class="container-fluid justify-content-start bg-light">
+                Copyright © samaya 2022
+            </div>
+            </d>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+        <script src="js/scripts.js "></script>
+        <script src="js/charts.js "></script>
+        <script src="https://kit.fontawesome.com/1341c370f4.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            const labels = [
+                'January',
+                'February',
+                'March',
+                'April',
+                'May',
+                'June',
+            ];
+
+            const data = {
+                labels: labels,
+                datasets: [{
+                    label: 'My First dataset',
+                    backgroundColor: 'rgb(255, 99, 132)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    data: [0, 10, 5, 2, 20, 30, 45],
+                }]
+            };
+
+            const config = {
+                type: 'line',
+                data: data,
+                options: {}
+            };
+        </script>
+
+        <script>
+            const myChart = new Chart(
+                document.getElementById('myChart'),
+                config
+            );
+        </script>
+
 </body>
 
 </html>
