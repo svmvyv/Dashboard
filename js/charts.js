@@ -1,39 +1,32 @@
-const labels = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-];
-
-const data = {
-    labels: labels,
-    datasets: [{
-        label: 'My First dataset',
-        backgroundColor: 'rgb(255, 99, 132)',
-        borderColor: 'rgb(255, 99, 132)',
-        data: [0, 10, 5, 2, 20, 30, 45],
-    }]
-};
-
-const config = {
+var arChart = document.getElementById("myAreaChart").getContext('2d');
+var AREAchart = new Chart(arChart, {
     type: 'line',
-    data: data,
-    options: {}
-};
+    data: {
+        labels: labels,
+        datasets: [{
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [0, 10, 5, 2, 20, 30, 45],
+        }]
+    },
+    options: {
+        scales: {
+            x: {
+                type: 'time',
+                time: {
+                    unit: 'month',
+                }
+            }
+        }
+    }
+});
 
-// Line Chart for Orders
-const myChart = new Chart(
-    document.getElementById("myAreaChart"),
-    config
-);
 
-// Bar Chart for Visitor
-var visitorChart = document.getElementById("myBarChart");
+// // Bar Chart for Visitor
+// var visitorChart = document.getElementById("myBarChart");
 
-// Liner Chart for Cities
-var citiesChart = document.getElementById("myPieChart");
+// // Liner Chart for Cities
+// var citiesChart = document.getElementById("myPieChart");
 
-// Liner Chart for Rat
-var ratChart = document.getElementById("myLinearChart");
+// // Liner Chart for Rat
+// var ratChart = document.getElementById("myLinearChart");
