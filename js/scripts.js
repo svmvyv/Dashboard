@@ -11,15 +11,14 @@ menu_btn.addEventListener("click", () => {
 
 $(document).ready(function() {
     $('#customersData').DataTable({
-        "ajax": "...\json\data.json",
+        "ajax": "../js/data.json",
         "columns": [
-            { 'data': 'name' },
-            { 'data': 'address' },
-            { 'data': 'city' },
-            { 'data': 'age' },
-            { 'data': 'last visit' },
-            { 'data': 'orders' }
-        ],
-        "dataSrc": ""
+            { "data": "name" },
+            { "data": "address" },
+            { "data": "city" },
+            { "data": "age" },
+            { "data": "last-visit" },
+            { "data": "orders" }
+        ]
     })
 });
