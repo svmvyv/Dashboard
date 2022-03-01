@@ -3,9 +3,9 @@ const newProds = products.map(myfunction);
 document.getElementById("desc").innerHTML = newProds;
 
 
-function myfunction(x) {
-    return products[0].description;
-}
+function myfunction({ items }: Props) {
+    return ();
+)
 
 
 const products = [{
