@@ -48,7 +48,7 @@ body {
 
 .active-nav {
     margin-left: 0;
-    margin-top: 60px;
+    margin-top: 70px;
 }
 
 .active-cont {
@@ -79,7 +79,11 @@ body {
 
 @media (min-width:767px) {}
 
-@media (min-width: 1450px) {}
+@media (max-width: 1024px) {
+    .active-nav {
+        margin-top: 65px;
+    }
+}
 
 @media (max-width: 576px) {
     .side-navbar {
@@ -93,5 +97,8 @@ body {
     }
     .active-cont {
         margin-left: 20px;
+    }
+    .active-nav {
+        margin-top: 60px;
     }
 }

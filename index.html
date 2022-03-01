@@ -40,7 +40,7 @@
             <div class="btn-group">
                 <button type="button" class="btn text-white dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
     <i class="fa-solid fa-user"></i>
-  </button>
+    </button>
 
 
                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -57,10 +57,15 @@
     <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column bg-purple align-content-center" id="sidebar">
         <ul class="nav flex-column text-white w-100  ">
             <li href="#" class="nav-link opacity-75">
-                <span class="text-white"><i class="fa-solid fa-house "></i><p class="p-2 d-none d-md-inline">Home</p></span>
+
+                <a href="index.html" style="text-decoration: none;">
+                    <span class="text-white"><i class="fa-solid fa-house "></i><p class="p-2 d-none d-md-inline">Home</p></span>
+                </a>
             </li>
             <li href="#" class="nav-link opacity-75">
-                <span class="text-white "><i class="fa-solid fa-shirt"></i><p class="p-2 d-none d-md-inline">Products</p></span>
+                <a href="products.html" style="text-decoration: none;">
+                    <span class="text-white "><i class="fa-solid fa-shirt"></i><p class="p-2 d-none d-md-inline">Products</p></span>
+                </a>
             </li>
             <li href="#" class="nav-link opacity-75">
                 <span class="text-white "><i class="fa-solid fa-border-all"></i><p class="p-2 d-none d-md-inline">Orders</p></span><i class="fa-solid fa-chevron-right text-white ml-10 float-end d-none d-xl-inline-flex d-xxl-inline-flex "></i>
@@ -200,11 +205,10 @@
             <div class="col-xxl-20 pt-3">
                 <div class="card ">
                     <div class="card-header text-muted ">
-                        <i class="fa-solid <i class=" fa fa-users " aria-hidden="true "></i> p-1 fs-6 ">
-                        </i>Customers
+                        <i class="fa-solid fa-users"></i> Customers
                     </div>
                     <div class="card-body font-dark">
-                        <table id="customersData" class="table" width="100%">
+                        <table id="customersData" class="table cell-border" width="100%">
                             <thead>
                                 <tr>
                                     <th>Name</th>

@@ -74,7 +74,7 @@ const prodCards = products.map((prod, index) => {
           <div class="align-items-center align-content-center col-md-3 border-left mt-1">
               <div class="d-flex flex-row align-items-center">
                   <div class="card-text">
-                      <h4 class="mr-1">${prod.price}</h4>
+                      <h4 class="mr-1">${prod.price}SAR</h4>
                   </div>
               </div>
               <h6 class="text-success">Free shipping</h6>
