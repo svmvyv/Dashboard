@@ -47,6 +47,7 @@ body {
 }
 
 .active-cont {
+    padding-left: 6% !important;
     margin-left: 185px;
 }
 
@@ -55,8 +56,6 @@ body {
 }
 
 .pp-3 {
-    padding-left: 6% !important;
-    margin-right: auto;
     margin-top: 60px;
 }
 
