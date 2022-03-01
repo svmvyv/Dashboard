@@ -61,7 +61,7 @@ const myProd = document.querySelector(".myProd");
 const prodCards = products.map((prod, index) => {
     return ` <div class="col-xxl-20">
   <!-- prod one  -->
-  <div class="card m-auto" style="width: 80%">
+  <div class="card mb-3 m-auto" style="width: 80%">
       <div class="row p-2 bg-white border rounded">
           <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="${prod.image}"></div>
           <div class="col-md-6 mt-1"><h4>${prod.name}</h4>
@@ -82,7 +82,7 @@ const prodCards = products.map((prod, index) => {
           </div>
       </div>
   </div> `
-})
+}).join('');
 
 
 myProd.innerHTML = prodCards
