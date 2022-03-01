@@ -21,6 +21,11 @@ body {
     color: white!important;
 }
 
+.bg-grey {
+    background: rgba(131, 131, 131, 0.281)!important;
+    color: rgb(59, 59, 59)!important;
+}
+
 .side-navbar {
     width: 250px;
     height: 100%;
@@ -49,6 +54,11 @@ body {
 .active-cont {
     padding-left: 6% !important;
     margin-left: 185px;
+}
+
+.active-ft {
+    margin-left: 250px;
+    transition: 0.4s;
 }
 
 #menu-btn {
